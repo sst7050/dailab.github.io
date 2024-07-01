@@ -41,13 +41,13 @@
     font-weight: bold;
     margin:auto;
     margin-left:0px;
-    background: #e4e4e4;
+    background: #8aaffd;
 }
 
 .nav{
     display:flex;
     justify-content: flex-end;
-    background: #e4e4e4;
+    background: #8aaffd;
 }
 
 .nav > li{
