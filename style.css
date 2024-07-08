@@ -4,14 +4,14 @@
     border-collapse: collapse;
     margin:0px;
     padding:0px;
-    color:#e4e4e4;
+    color:#000;
 }
 
 
 .intro_bg{
     display: flex;
     flex-direction: column;
-    background-color: #e4e4e4;
+    background-color: #FFF;
     width:100%;
     height:100vh;
 }
@@ -60,13 +60,14 @@
     display: flex;
     width: 100%;
     flex-grow: 1;
+    background: #299399;
 }
 
 .left {
     flex: 2;
     display: flex;
     flex-direction: column;
-    background: #e4e4e4;
+    background: #FFF;
 }
 
 .hello{
@@ -76,20 +77,20 @@
     align-items: center;
     height: 40%;
     padding-bottom: 30px;
-    background: #e4e4e4;
+    background: #FFF;
 }
 
 .robot{
     text-align: center;
     height: 60%;
-    background: #e4e4e4;
+    background: #FFF;
 }
 
 .right {
     flex: 1;
     height: 100%;
     align-self: stretch;
-    background: #e4e4e4;
+    background: #FFF;
 }
 
 
@@ -106,7 +107,7 @@
     align-items: center;
     padding-bottom: 30px;
     height: 30%;
-    background-color: #e4e4e4;
+    background-color: #FFF;
 }
 
 .contacts {
@@ -115,7 +116,7 @@
     justify-content: left;
     align-items: end;
     margin: auto;
-    background-color: #e4e4e4;
+    background-color: #FF999F;
     width: 65%;
     height: 15%;
 }
@@ -125,7 +126,7 @@
     justify-content: left;
     align-items: end;
     margin: auto;
-    background-color: #e4e4e4;
+    background-color: #FFF;
     width: 55%;
     height: 20%;
 }
@@ -135,7 +136,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: #e4e4e4;
+    background-color: #FFF;
     width: 55%;
     height: 35%;
 }
@@ -143,4 +144,72 @@
 .map > iframe{
     width:80%;
     
+}
+
+/*about*/
+.professor {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: darkslategrey;
+}
+
+.p-image {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.details {
+    font-size: 25px;
+    max-width: 30vw;
+    background-color: darkkhaki;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+/* .details a {
+    color: #0000EE;
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+} */
+
+.empty {
+    height: 40%
+}
+
+
+.research-area {
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+.research-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
