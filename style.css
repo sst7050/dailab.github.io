@@ -24,7 +24,8 @@
     top: 0;
     width: 100%;
     height: 90px;
-    background: #8aaffd;
+    background: #FFF
+    /*#8aaffd;*/
 }
 
 .header {
@@ -33,7 +34,7 @@
     align-items: center;
     width: 80vw;
     height: 100%;
-    background: #8aaffd;
+    background: #FFF;
 }
 
 .logo{
@@ -41,13 +42,13 @@
     font-weight: bold;
     margin:auto;
     margin-left:0px;
-    background: #8aaffd;
+    background: #FFF;
 }
 
 .nav{
     display:flex;
     justify-content: flex-end;
-    background: #8aaffd;
+    background: ##FFF;
 }
 
 .nav > li{
