@@ -59,18 +59,49 @@
     margin-left:50px
 }
 
-@media (max-width: 1000px) {
+.menu-trigger {
+    display: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.menu-trigger span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    margin: 6px auto;
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.menu-trigger.active span:nth-of-type(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+@media (max-width: 600px) {
     .nav {
         display: none;
     }
 
     .header {
-        justify-content: center; /* logo를 중앙 배치 */
+        justify-content: center;
     }
 
     .logo {
-        margin-left: auto; /* 좌측 여백 없애기 */
-        margin-right: auto; /* 우측 여백 없애기 */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-trigger {
+        display: block;
     }
 }
 
