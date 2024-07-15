@@ -103,6 +103,18 @@
     .menu-trigger {
         display: block;
     }
+    
+    .robot{
+        display: none;
+    }
+
+    .left{
+        display: none;
+    }
+
+    .right{
+        display: none;
+    }
 }
 
 .container {
