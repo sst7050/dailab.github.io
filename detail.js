@@ -1,10 +1,13 @@
-var burger = $('.menu-trigger');
+document.addEventListener("DOMContentLoaded", function() {
+    const menuTrigger = document.querySelector('.menu-trigger');
+    const sideMenu = document.querySelector('.side_menu');
 
-burger.each(function(index){
-  var $this = $(this);
-  
-  $this.on('click', function(e){
-    e.preventDefault();
-    $(this).toggleClass('active-' + (index+1));
-  })
+    menuTrigger.addEventListener('click', function() {
+        menuTrigger.classList.toggle('active-1');
+        if (sideMenu.style.display === "block") {
+            sideMenu.style.display = "none";
+        } else {
+            sideMenu.style.display = "block";
+        }
+    });
 });
