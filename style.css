@@ -38,7 +38,7 @@
 }
 
 .logo{
-    font-size: 45px;
+    font-size: clamp(25px, 3vw, 48px);
     font-weight: bold;
     margin:auto;
     margin-left:0px;
@@ -48,13 +48,30 @@
 .nav{
     display:flex;
     justify-content: flex-end;
-    background: ##FFF;
+    margin-right:10vw;
+    background: #FFF;
 }
 
 .nav > li{
-    font-size: 30px;
+    font-size: clamp(23px,1vw,30px);
+    font-weight: bold;
     margin:auto;
     margin-left:50px
+}
+
+@media (max-width: 1000px) {
+    .nav {
+        display: none;
+    }
+
+    .header {
+        justify-content: center; /* logo를 중앙 배치 */
+    }
+
+    .logo {
+        margin-left: auto; /* 좌측 여백 없애기 */
+        margin-right: auto; /* 우측 여백 없애기 */
+    }
 }
 
 .container {
