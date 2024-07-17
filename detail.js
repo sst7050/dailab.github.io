@@ -8,19 +8,25 @@ document.addEventListener("DOMContentLoaded", function() {
         menuTrigger.classList.toggle('active-1');
         if (sideMenu.classList.contains('active')) {
             sideMenu.classList.remove('active');
-            sideMenu.style.height = '0';
             overlay.classList.remove('active');
         } else {
             sideMenu.classList.add('active');
-            sideMenu.style.height = sideMenu.scrollHeight + 'px';
             overlay.classList.add('active');
         }
     });
 
     overlay.addEventListener('click', function() {
         sideMenu.classList.remove('active');
-        sideMenu.style.height = '0';
         overlay.classList.remove('active');
         menuTrigger.classList.remove('active-1');
     });
+
+    var counter = 1;
+    setInterval(function() {
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if (counter > 5) {
+            counter = 1;
+        }
+    }, 5000);
 });
