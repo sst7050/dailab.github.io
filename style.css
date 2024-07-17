@@ -58,7 +58,12 @@
 
 @media (max-width: 1500px) {
 
+    .intro_bg{
+        height:100vh;
+    }
+
     .menu{
+        height: 60px;
         background: #FFF;
         z-index: 3;
     }
@@ -146,10 +151,10 @@
 
     .side_menu {
         display: none;
-        font-size: clamp(10px, 2vw, 30px);
+        font-size: clamp(20px, 2vw, 30px);
         position: absolute;
         width: 100vw;
-        top: 90px;
+        top: 60px;
         background: #fff;
         padding-left: 50px;
         list-style: none;
