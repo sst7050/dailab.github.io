@@ -1,47 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<HEAD>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <TITLE>DAI Lab</TITLE>
-    <script src="detail.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <HEAD>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+        <TITLE>DAI Lab</TITLE>
+        <script src="detail.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </HEAD>
 
-</HEAD>
 
-
-<BODY id="top" data-spy="scroll">
-    <div class="intro_bg">
-        <div class="menu">
-            <div class="logo">
-                <a href="#" onclick="location.href='index.html'">DAI LAB</a>
-            </div>
-            <ul class="nav">
-                <li><a href="#" onclick="location.href='about.html'">About</a></li>
-                <li><a href="#" onclick="location.href='member.html'">Member</a></li>
-                <li><a href="#" onclick="location.href='project.html'">Project</a></li>
-                <li><a href="#" onclick="location.href='publication.html'">Publication</a></li>
-                <li><a href="#" onclick="location.href='news.html'">News</a></li>
-            </ul>
-            <a class="menu-trigger" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <ul class="side_menu">
-                <li><a href="#" onclick="location.href='about.html'">About</a></li>
-                <li><a href="#" onclick="location.href='member.html'">Member</a></li>
-                <li><a href="#" onclick="location.href='project.html'">Project</a></li>
-                <li><a href="#" onclick="location.href='publication.html'">Publication</a></li>
-                <li><a href="#" onclick="location.href='news.html'">News</a></li>
-            </ul>
-            
-        </div>
-            
-            <div class="container">
+    <BODY id="top" data-spy="scroll">
+        <div class="intro_bg">
+            <div class="menu">
+                <div class="logo">
+                    <a href="#" onclick="location.href='index.html'">DAI LAB</a>
+                </div>
+                <ul class="nav">
+                    <li class="dropdown">
+                        <a href="#" onclick="location.href='about.html'">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Member <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="location.href='member.html'">Member</a>
+                            <a href="#">Alumni</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" onclick="location.href='project.html'">Project</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Publication <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="location.href='publication.html'">International Journal</a>
+                            <a href="#">International Conference</a>
+                            <a href="#">Domestic Journal</a>
+                            <a href="#">Domestic Conference</a>
+                            <a href="#">Awards</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" onclick="location.href='news.html'">News</a>
+                    </li>
+                </ul>
+                <a class="menu-trigger" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                
+                <ul class="side_menu">
+                    <li><a href="#" onclick="location.href='about.html'">About</a></li>
+                    <li><a href="#" onclick="location.href='member.html'">Member</a></li>
+                    <li><a href="#" onclick="location.href='project.html'">Project</a></li>
+                    <li><a href="#" onclick="location.href='publication.html'">Publication</a></li>
+                    <li><a href="#" onclick="location.href='news.html'">News</a></li>
+                </ul>
+                
                 
             </div>
+            <div class="overlay"></div>
+            
+            <div class="basic">
+                <div class="note">
+                    <img src="assets/home/image1.png" alt="">
+                    <div class="overlay1"></div>
+                </div>
+
+                <div class="name">
+                    <br> Publications
+                </div>
+                
+                <div class="publication">
+                    <div class="media-body">
+                        <div class="public-topic">
+                            <a>
+                                논문 이름 1
+                            </a>
+                        </div>
+                        <div class="public-data">
+                            <a>
+                                논문 데이터1
+                            </a>
+                        </div>
+                        <div class="public-people">
+                            <a>
+                                논문 저자 이름1
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <div class="public-topic">
+                            <a>
+                                논문 이름 2
+                            </a>
+                        </div>
+                        <div class="public-data">
+                            <a>
+                                논문 데이터 2
+                            </a>
+                        </div>
+                        <div class="public-people">
+                            <a>
+                                논문 저자 이름 2
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <div class="public-topic">
+                            <a>
+                                논문 이름 3
+                            </a>
+                        </div>
+                        <div class="public-data">
+                            <a>
+                                논문 데이터 3
+                            </a>
+                        </div>
+                        <div class="public-people">
+                            <a>
+                                논문 저자 이름 3
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <div class="public-topic">
+                            <a>
+                                논문 이름 1
+                            </a>
+                        </div>
+                        <div class="public-data">
+                            <a>
+                                논문 데이터1
+                            </a>
+                        </div>
+                        <div class="public-people">
+                            <a>
+                                논문 저자 이름1
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <div class="public-topic">
+                            <a>
+                                논문 이름 2
+                            </a>
+                        </div>
+                        <div class="public-data">
+                            <a>
+                                논문 데이터 2
+                            </a>
+                        </div>
+                        <div class="public-people">
+                            <a>
+                                논문 저자 이름 2
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <div class="public-topic">
+                            <a>
+                                논문 이름 3
+                            </a>
+                        </div>
+                        <div class="public-data">
+                            <a>
+                                논문 데이터 3
+                            </a>
+                        </div>
+                        <div class="public-people">
+                            <a>
+                                논문 저자 이름 3
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
         
