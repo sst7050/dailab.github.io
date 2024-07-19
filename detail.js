@@ -29,4 +29,15 @@ document.addEventListener("DOMContentLoaded", function() {
             counter = 1;
         }
     }, 5000);
+
+    // 드롭다운 기능 추가
+    var dropdowns = document.querySelectorAll('.side_menu .dropdown > a');
+
+    dropdowns.forEach(function(dropdown) {
+        dropdown.addEventListener('click', function(event) {
+            event.preventDefault();
+            var parent = this.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
 });
