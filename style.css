@@ -1,5 +1,58 @@
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('./font/RobotoSlab-Thin.ttf');
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('./font/RobotoSlab-ExtraLight.ttf');
+    font-weight: 200;
+}
+
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('./font/RobotoSlab-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('./font/RobotoSlab-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('./font/RobotoSlab-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('./font/RobotoSlab-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('./font/RobotoSlab-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('./font/RobotoSlab-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('./font/RobotoSlab-Black.ttf');
+    font-weight: 900;
+}
+
 *{
-    list-style:none;
     text-decoration:none;
     border-collapse: collapse;
     margin:0px;
@@ -36,8 +89,9 @@ body {
 
 
 .logo{
+    font-family: 'Roboto Slab';
     font-size: clamp(25px, 3vw, 35px);
-    font-weight: bold;
+    font-weight: 300;
     margin:auto;
     margin-left:10vw;
     background: #1b2021;
@@ -62,7 +116,8 @@ body {
 .nav .dropdown a{
     color: #efefef;
     font-size: clamp(14px, 0.8vw, 23px);
-    font-weight: normal;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
     margin: 2vw;
     text-decoration: none;
     position: relative;
@@ -108,7 +163,7 @@ body {
     display: none;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
 
     body {
         overflow-x: hidden; /* 가로 스크롤 방지 */
@@ -136,7 +191,8 @@ body {
     .logo > a {
         text-align: center;
         font-size: clamp(20px, 3vw, 48px);
-        font-weight: bold;
+        font-family: 'Roboto Slab';
+        font-weight: 300;
         color: #efefef;
     }
     
@@ -206,6 +262,8 @@ body {
     .side_menu {
         display: none;
         font-size: clamp(20px, 2vw, 30px);
+        font-family: 'Roboto Slab';
+        font-weight: 400;
         position: absolute;
         width: 100vw;
         top: 60px;
@@ -295,8 +353,6 @@ body {
 /*여기까지 nav바 css*/
 
 /*home(index)*/
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -314,9 +370,9 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
-    background: #fff;
     font-size: clamp(24px, 3vw, 30px);
-    font-weight: 600;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
 }
 
 .info{
@@ -324,41 +380,44 @@ body {
     text-align: center;
     width: 60%;
     margin-top: 50px;
-    font-size: clamp(20px, 2vw, 20px);
-    color:#484848;
+    font-size: clamp(18px, 2vw, 25px);
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color:#000000;
 }
 
 .info h4 {
-    display: inline; /* 줄바꿈 없이 텍스트 이어지도록 설정 */
-    font-weight: bold; /* h4만 볼드체로 설정 */
-    margin: 0; /* h4의 기본 여백 제거 */
+    display: inline;
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    margin: 0;
 }
 
 .topic{
+    font-family: 'Roboto Slab';
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 200px;
     font-size: clamp(24px, 3vw, 30px);
-    font-weight: 400;
 }
 
 .topic p{
     font-size: clamp(10px, 2vw, 20px);
-    font-weight: lighter;
+    font-weight: 300;
     text-align: center;
     margin-top: 10px;
+    
+    margin-bottom: 40px;
     color: #484848;
 }
 
 .research-area {
     margin: auto;
-    background-color: #fff;
-    padding: 20px;
     text-align: center;
     width: 70%;
-    margin-bottom: 40px;
 }
 
 
@@ -367,7 +426,6 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .icon {
@@ -396,6 +454,8 @@ body {
 
 .icon p {
     font-size: clamp(15px, 2vw, 27px);
+    font-family: 'Roboto Slab';
+    font-weight: 400;
     width: 100%;
     margin-bottom: 10px;
     color: #000000;
@@ -403,11 +463,39 @@ body {
 
 .icon p.sub-text {
     font-size: clamp(10px, 2vw, 20px);
-    font-weight: lighter;
+    font-family: 'Roboto Slab';
+    font-weight: 300;
     text-align: center;
     width: 80%;
     color: #484848;
 }
+
+.projects {
+    border-left: 10px solid #66857b;
+    padding-left: 15px;
+    margin: 20px 0;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: left;
+}
+
+.projects p{
+    font-size: clamp(24px, 3vw, 30px);
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+.projects ul{
+    font-size: clamp(15px, 2vw, 20px);
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    padding-left: 20px;
+}
+.projects ul > li{
+    margin-bottom: 10px;
+}
+
 
 
 /* .slider{
