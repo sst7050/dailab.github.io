@@ -162,7 +162,7 @@ body {
     display: none;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 650px) {
 
     body {
         overflow-x: hidden; /* 가로 스크롤 방지 */
@@ -170,7 +170,6 @@ body {
 
     .intro_bg{
         width:100%;
-        height:100vh;
     }
     
     .menu{
@@ -582,8 +581,7 @@ body {
 
 }
 
-@media (max-width: 750px){
-
+@media (max-width: 650px){
     .professor{
         display: flex;
         flex-direction: column;
@@ -611,16 +609,16 @@ body {
 
 /*members*/
 
-
 .m-topic{
     font-family: 'Roboto Slab';
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 60%;
+    width: 60vw;
     margin-top: 50px;
     font-size: clamp(24px, 3vw, 30px);
 }
+
 
 .m-topic::after {
     content: '';
@@ -630,22 +628,69 @@ body {
     margin: 10px auto 0;
 }
 
+.member-area {
+    margin: auto;
+    text-align: left;
+    width: 60vw;
+}
+
+.member-imgs {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin: 10px;
+    margin-right: 50px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.img img{
+    height: clamp(160px, 15vw, 300px);
+}
+
+.img p {
+    font-size: clamp(10px, 2vw, 20px);
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    width: 110%;
+    color: #000000;
+}
+
+.img p.sub-text {
+    font-size: clamp(7px, 1.5vw, 15px);
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    text-align: center;
+    width: 110%;
+    color: #484848;
+}
+
 
 @media (max-width: 1000px){
-    .member-area {
-        width: 80%;
-    }
     .m-topic{
         width: 80vw;
     }
-}
-
-@media (max-width: 750px){
 
     .member-area {
-        width: 90%;
+        width: 80vw;
     }
+
+
+}
+
+@media (max-width: 650px){
     .m-topic{
+        width: 90vw;
+    }
+
+    .member-area {
         width: 90vw;
     }
 }
