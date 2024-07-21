@@ -70,7 +70,6 @@ body {
     flex-direction: column;
     background-color: #FFF;
     width:100%;
-    height:100vh;
 }
 
 .menu {
@@ -163,7 +162,7 @@ body {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
 
     body {
         overflow-x: hidden; /* 가로 스크롤 방지 */
@@ -557,10 +556,6 @@ body {
     width: 1em;
 }
 
-
-
-
-
 @media (max-width: 1000px){
     .professor{
         display: flex;
@@ -588,6 +583,7 @@ body {
 }
 
 @media (max-width: 750px){
+
     .professor{
         display: flex;
         flex-direction: column;
@@ -612,6 +608,51 @@ body {
 
 
 }
+
+/*members*/
+
+
+.m-topic{
+    font-family: 'Roboto Slab';
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    margin-top: 50px;
+    font-size: clamp(24px, 3vw, 30px);
+}
+
+.m-topic::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #66857b;
+    margin: 10px auto 0;
+}
+
+
+@media (max-width: 1000px){
+    .member-area {
+        width: 80%;
+    }
+    .m-topic{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 750px){
+
+    .member-area {
+        width: 90%;
+    }
+    .m-topic{
+        width: 90vw;
+    }
+}
+
+
+
+
 
 
 
