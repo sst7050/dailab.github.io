@@ -140,6 +140,20 @@ body {
     z-index: 1000;
 }
 
+.nav .dropdown-content1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left:80%;
+    transform: translateX(-50%);
+    background-color: #1b2021;
+    min-width: 230px;
+    padding-top: 1vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav .dropdown-content1 .dropdown-item,
 .nav .dropdown-content .dropdown-item {
     padding: 10px 15px;
     color: #efefef;
@@ -148,10 +162,12 @@ body {
     display: block;
 }
 
+.nav .dropdown-content1 .dropdown-item:hover,
 .nav .dropdown-content .dropdown-item:hover {
     background-color: #5a5e5f;
 }
 
+.nav .dropdown:hover .dropdown-content1,
 .nav .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -697,16 +713,11 @@ body {
 
 
 
+/*News*/
 
 
 
 
-
-
-
-.empty {
-    height: 40%
-}
 
 
 
@@ -737,15 +748,45 @@ body {
     left: 0;
 }
 
-.name {
-    font-size: clamp(25px, 4vw, 40px);
-    font-weight: normal;
+.p-topic {
+    font-family: 'Roboto Slab';
+    display: inline-block;
+    margin: auto;
+    width: auto;
+    margin-top: 50px;
+    font-size: clamp(24px, 3vw, 30px);
+    position: relative;
+}
+
+.p-topic::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #66857b;
+    margin: 10px 0 0 0;
+}
+
+.p1-topic{
+    font-family: 'Roboto Slab';
     display: flex;
-    justify-content: left;
-    align-items: flex-end;
-    margin-bottom: 30px;
-    background-color: #fff;
-    width: 75%;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 40px;
+    width: 70vw;
+    margin-top: 50px;
+    font-size: clamp(24px, 3vw, 30px);
+}
+
+.box p{
+    font-family: 'Roboto Slab';
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 40px;
+    width: 70vw;
+    margin-top: 50px;
+    font-size: clamp(18px, 2vw, 25px);
 }
 
 .publication {
@@ -753,44 +794,47 @@ body {
     flex-direction: column;
     align-items: flex-start;
     background-color: #fff;
-    width: 70%;
+    width: 70vw;
     padding: 20px;
     box-sizing: border-box;
 }
 
+.basic p {
+    margin: 0;
+    padding: 0;
+    text-align: left; /* 이미 기본값이지만 명시적으로 추가 */
+}
+
 .media-body {
     padding-bottom: 30px;
+    font-size: clamp(15px, 1.2vw, 20px);
 }
 
-.public-topic{
-    font-size: clamp(15px,1.2vw,25px);
-    font-weight: bold;
-    margin-bottom: 15px;
+.media-body ul > li{
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
-.public-data,
-.public-people {
-    font-size: clamp(12px,1vw,20px);
-    margin-bottom: 10px;
+.media-body ul > li p{
+    display: inline;
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    margin: 0;
 }
 
-.public-data > a,
-.public-people > a {
-    
-    color: #595959;
-}
 
 /*contacts*/
 
 .contacts {
     font-size: clamp(30px,6vw,50px);
-    font-weight: normal;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
     display: flex;
     justify-content: left;
     align-items: end;
     margin: auto;
     margin-top: 10vh;
-    background-color: #fff;
     width: 60%;
 }
 
@@ -798,21 +842,22 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: #fff;
     width: 60%;
     height: 20%;
 }
 
-.address li{
+.address li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    font-size: clamp(15px,1vw,20px);
+    font-size: clamp(15px, 1vw, 20px);
+    font-family: 'Roboto Slab';
+    font-weight: 400;
     margin-bottom: 20px;
 }
 
@@ -821,11 +866,11 @@ body {
     font-size: 40px;
 }
 
+
 .map {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
     margin:auto;
     width: 60%;
     height: 45vh;
