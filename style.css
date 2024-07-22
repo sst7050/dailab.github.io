@@ -510,7 +510,7 @@ body {
 }
 
 .about p{
-    font-size: clamp(1em,2vw, 2em);
+    font-size: clamp(15px, 2.5vw, 25px);
     font-family: 'Roboto Slab';
     font-weight: 500;
 }
@@ -534,31 +534,18 @@ body {
 
 @media (max-width: 1000px){
     .professor{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5vh;
         width: 80vw;
-        height: 40vh;
     }
 
     .about{
-        width: 80%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        margin-top: 20px;
-        padding-left: 0;
-        margin-left: 0;
+        margin-left: 50px;
     }
 
 
 }
 
 @media (max-width: 650px){
+    
     .professor{
         display: flex;
         flex-direction: column;
@@ -567,8 +554,8 @@ body {
         align-items: center;
         margin-top: 5vh;
         width: 90vw;
-        height: 40vh;
     }
+    
 
     .about{
         width: 100%;
@@ -581,6 +568,13 @@ body {
         margin-left: 0;
     }
 
+    .about p{
+        font-size: 20px;
+    }
+    
+    .about li {
+        font-size: 15px;
+    }
 
 }
 
@@ -665,6 +659,8 @@ body {
 @media (max-width: 650px){
     .m-topic{
         width: 90vw;
+        margin-top: 5vh;
+        font-size: 25px;
     }
 
     .member-area {
@@ -739,8 +735,9 @@ body {
 .box p{
     display: flex;
     flex-direction: column;
-    font-size: clamp(18px, 2vw, 25px);
+    font-size: clamp(19px, 2vw, 27px);
     font-family: 'Roboto Slab';
+    font-weight: 500;
     margin-bottom: 40px;
     width: 70vw;
     margin-top: 50px;
@@ -776,6 +773,26 @@ body {
     margin: 0;
 }
 
+
+@media(max-width:650px){
+    .p1-topic,
+    .publication,
+    .box{
+        width: 85vw;
+    }
+
+    .publication{
+        font-size: 24px;
+    }
+
+    .media-body {
+        font-size: 18px;
+    }
+
+    .box p{
+        font-size: 20px;
+    }
+}
 
 
 
