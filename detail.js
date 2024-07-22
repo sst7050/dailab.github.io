@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Side Menu Functionality
     const menuTrigger = document.querySelector('.menu-trigger');
     const sideMenu = document.querySelector('.side_menu');
     const overlay = document.querySelector('.overlay');
@@ -21,16 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
         menuTrigger.classList.remove('active-1');
     });
 
-    var counter = 1;
-    setInterval(function() {
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if (counter > 5) {
-            counter = 1;
-        }
-    }, 5000);
 
-    // 드롭다운 기능 추가
+    // Dropdown Functionality
     var dropdowns = document.querySelectorAll('.side_menu .dropdown > a');
 
     dropdowns.forEach(function(dropdown) {
@@ -38,6 +31,27 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
             var parent = this.parentElement;
             parent.classList.toggle('active');
+        });
+    });
+
+    // Post Collapse Functionality with slideDown and slideUp animations
+    const posts = document.querySelectorAll('.post .title');
+
+    posts.forEach((title) => {
+        title.addEventListener('click', function() {
+            const post = this.parentElement;
+            const content = post.querySelector('.content');
+            if (post.classList.contains('active')) {
+                post.classList.remove('active');
+                post.classList.add('removing');
+                setTimeout(() => {
+                    post.classList.remove('removing');
+                    content.style.display = 'none';
+                }, 470); // Match the duration of the slideUp animation
+            } else {
+                content.style.display = 'block';
+                post.classList.add('active');
+            }
         });
     });
 });
