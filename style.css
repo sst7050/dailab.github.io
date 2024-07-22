@@ -455,12 +455,14 @@ body {
 }
 
 @media (max-width: 650px){
+    .info{
+        width: 90vw;
+    }
 
 
     .research-area {
         width: 90vw;
     }
-
 
 
 }
