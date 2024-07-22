@@ -338,7 +338,7 @@ body {
 .info{
     margin: auto;
     text-align: center;
-    width: 60%;
+    width: 60vw;
     margin-top: 50px;
     font-size: clamp(18px, 2vw, 25px);
     font-family: 'Roboto Slab';
@@ -453,6 +453,19 @@ body {
 .projects ul > li{
     margin-bottom: 10px;
 }
+
+@media (max-width: 650px){
+
+
+    .research-area {
+        width: 90vw;
+    }
+
+
+
+}
+
+
 
 /*Member*/
 /*Professor*/
