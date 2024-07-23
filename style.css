@@ -365,7 +365,7 @@ body {
 }
 
 .topic p{
-    font-size: clamp(10px, 2vw, 20px);
+    font-size: clamp(13px, 2vw, 20px);
     font-weight: 300;
     text-align: center;
     margin-top: 10px;
@@ -420,7 +420,7 @@ body {
 }
 
 .icon p.sub-text {
-    font-size: clamp(10px, 2vw, 20px);
+    font-size: clamp(13px, 2vw, 20px);
     font-family: 'Roboto Slab';
     font-weight: 300;
     text-align: center;
@@ -466,7 +466,7 @@ body {
     }
 
     .projects ul{
-        font-size: 13px;
+        font-size: 14px;
     }
 
 }
