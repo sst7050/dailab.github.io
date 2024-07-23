@@ -407,7 +407,7 @@ body {
 .icon i {
     margin-bottom: 10px;
     color: #66857b;
-    font-size: clamp(5px, 8vw, 70px);
+    font-size: clamp(10px, 8vw, 70px);
 }
 
 .icon p {
