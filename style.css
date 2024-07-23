@@ -804,11 +804,12 @@ body {
 }
 
 .post {
-    margin-bottom: 10px;
+    
     cursor: pointer;
 }
 
 .title {
+    margin-bottom: 10px;
     padding: 15px;
 }
 
@@ -829,12 +830,25 @@ body {
     margin: 0;
 }
 
+.gray{
+    display: inline;
+}
+
+.gray p {
+    display: inline;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: clamp(15px, 0.8vw, 20px);
+    color: #484848;
+    margin: 0;
+}
+
 .content {
     display: none;
     flex-direction: row;
-    height: 38vh;
-    padding: 15px;
-    background-color: #fafafa;
+    height: 420px;
+    padding: 10px;
+    background-color: #e8e7e7;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -842,7 +856,7 @@ body {
 
 
 .content img {
-    height: 40vh;
+    height: 400px;
     display: inline-block;
 }
 
@@ -862,13 +876,13 @@ body {
         max-height: 0;
     }
     to {
-        max-height:35vh;
+        max-height:420px;
     }
 }
 
 @keyframes slideUp {
     from {
-        max-height: 35vh;
+        max-height: 420px;
     }
     to {
         max-height: 0;
