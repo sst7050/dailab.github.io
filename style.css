@@ -883,6 +883,21 @@ body::-webkit-scrollbar-track{
     white-space: nowrap;
 }
 
+.content::-webkit-scrollbar{
+    height: 10px;
+    background-color: #e8e7e7;
+}
+
+.content::-webkit-scrollbar-thumb{
+    background-color: #89afa3;
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-track{
+    background-color: #e8e7e7;
+    border-radius: 10px;
+}
+
 
 .content img {
     height: 400px;
