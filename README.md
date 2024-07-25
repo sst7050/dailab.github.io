@@ -18,29 +18,34 @@
 
 * news: DAI Lab 이슈 목록 - 워크숍, 학술대회 참석, 수상 등
 
-* contact: 랩장 이메일, 주소
+* contact: 랩장 이메일, 연구실 주소
 
 
 # 2. nav 바 수정 
 
 ## 2.1. 메뉴 추가하는 과정
 * 주 메뉴 추가하는 과정 (예: News 옆에 하나 추가하기)
+    메뉴 코드는 전체 html 파일에 추가해야 한다. publication과 people 폴더의 경로를 적을 때는 주의한다.
   * 기본 nav 바에 추가 (예: plus.html)
     1. plus.html을 만든다.
+
     2. 만들고자 하는 위치에 다음과 같은 메뉴를 추가한다.
     ``` html
     <li class="dropdown"><a href="./plus.html" data-target="plus">Plus</a></li>
     ```
     3. 결과
-    ![alt text](image.png)
+
 
     주의: 메뉴가 늘어났으므로 nav바가 깨질 수 있다. 그럼 css-nav 클래스를 아래 주석과 같이 적절하게 조정하면 된다.
-    ![alt text](image-1.png)
+
     ``` css
     .nav {
         margin-right: 15vw; /*  15vw -> 10vw */
     }
     ```
+
+    4. 수정 결과
+
 * 부 메뉴 추가하는 과정 (예: Publication 아래에 새로운 '기간'에 해당되는 항목을 추가하기)
   * media nav 바에 추가
 
