@@ -60,8 +60,8 @@
      * plus.html을 만든다.
        
      * 만들고자 하는 위치에 다음과 같은 메뉴 코드를 추가한다.
-        ```html
-      <li><a href="./plus.html" data-target="plus">Plus</a></li>
+       ```html
+       <li><a href="./plus.html" data-target="plus">Plus</a></li>
        ```
      * 결과
      
