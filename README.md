@@ -30,23 +30,23 @@
     1. plus.html을 만든다.
 
     2. 만들고자 하는 위치에 다음과 같은 메뉴를 추가한다.
-    ``` html
-    <li class="dropdown"><a href="./plus.html" data-target="plus">Plus</a></li>
-    ```
+       ``` html
+       <li class="dropdown"><a href="./plus.html" data-target="plus">Plus</a></li>
+       ```
     3. 결과
+       주의: 메뉴가 늘어났으므로 nav바가 깨질 수 있다. 그럼 css-nav 클래스를 아래 주석과 같이 적절하게 조정하면 된다.
+       <img src ="https://github.com/user-attachments/assets/f46a38f7-5087-405a-87c3-6df2443d694d" width=500px>
 
 
-    주의: 메뉴가 늘어났으므로 nav바가 깨질 수 있다. 그럼 css-nav 클래스를 아래 주석과 같이 적절하게 조정하면 된다.
-    <img src ="https://github.com/user-attachments/assets/f46a38f7-5087-405a-87c3-6df2443d694d" width=300px>
-
-
-    ``` css
-    .nav {
-        margin-right: 15vw; /*  15vw -> 10vw */
-    }
-    ```
+       ``` css
+       .nav {
+           margin-right: 15vw; /*  15vw -> 10vw */
+       }
+       ```
 
     4. 수정 결과
+       <img src="https://github.com/user-attachments/assets/03adc951-a148-491f-9648-b45a0cf60c1e" width= 500px>
+
 
 * 부 메뉴 추가하는 과정 (예: Publication 아래에 새로운 '기간'에 해당되는 항목을 추가하기)
   * media nav 바에 추가
