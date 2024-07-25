@@ -670,6 +670,7 @@ body::-webkit-scrollbar-track{
     font-family: 'Roboto Slab';
     font-weight: 300;
     text-align: center;
+    margin-bottom: 20px;
     width: 100%;
     color: #484848;
 }
