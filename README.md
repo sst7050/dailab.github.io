@@ -52,20 +52,21 @@
        ```
 
     * 수정 결과
-    * 
+      
        <img src="https://github.com/user-attachments/assets/03adc951-a148-491f-9648-b45a0cf60c1e" width= 500px>
 
+
   * media nav 바에 추가 (예: plus.html)
-  * plus.html을 만든다.
-  * 
-  * 만들고자 하는 위치에 다음과 같은 메뉴 코드를 추가한다.
-     ```html
-   <li><a href="./plus.html" data-target="plus">Plus</a></li>
-    ```
-  * 결과
-  
-  <img src ="https://github.com/user-attachments/assets/97819168-115d-4b17-a1a6-ecd13aeae2b0" width=400px>
-   <img src ="https://github.com/user-attachments/assets/8b972a82-066e-4369-94f0-56371e17ef48" width=400px>
+     * plus.html을 만든다.
+       
+     * 만들고자 하는 위치에 다음과 같은 메뉴 코드를 추가한다.
+        ```html
+      <li><a href="./plus.html" data-target="plus">Plus</a></li>
+       ```
+     * 결과
+     
+     <img src ="https://github.com/user-attachments/assets/97819168-115d-4b17-a1a6-ecd13aeae2b0" width=400px>
+      <img src ="https://github.com/user-attachments/assets/8b972a82-066e-4369-94f0-56371e17ef48" width=400px>
 
 
 
