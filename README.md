@@ -36,8 +36,8 @@
        ```
     3. 결과
        
-       <img src="https://github.com/user-attachments/assets/f3be63d5-7343-4e7d-a297-b46d75c54c53" width=700px;>
-       <img src="https://github.com/user-attachments/assets/0f299284-1595-47cc-8621-4ab1077d4d81" width=700px;>
+       <img src="https://github.com/user-attachments/assets/f3be63d5-7343-4e7d-a297-b46d75c54c53" width=1000px;>
+       <img src="https://github.com/user-attachments/assets/0f299284-1595-47cc-8621-4ab1077d4d81" width=1000px;>
        
        주의: 메뉴가 늘어났으므로 nav바가 깨질 수 있다. 그럼 css-nav 클래스를 아래 주석과 같이 적절하게 조정하면 된다.
        <img src ="https://github.com/user-attachments/assets/f46a38f7-5087-405a-87c3-6df2443d694d" width=500px>
