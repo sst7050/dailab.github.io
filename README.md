@@ -184,11 +184,25 @@
       <img src="https://github.com/user-attachments/assets/18a3794a-d6f1-4989-beda-0f9d4ef0b187" width= 600px>
 
 </details>
-.
-.
-.
-.
-.
+
+
+
+# 3. 문서 내용 수정하는 과정 
+
+## 3.1. Student 멤버 추가
+
+
+## 3.2. Alumni 멤버 추가
+
+
+## 3.3. Publication 논문 추가
+
+
+## 3.4. News 소식 추가
+
+
+
+
 
 * 문서 내용 수정하는 과정
   * 글 내용 수정 (예: Publication - 2021.09.01 ~ present 에서 논문 실적 1개 추가하기)
