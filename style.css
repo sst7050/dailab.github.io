@@ -601,17 +601,17 @@ body::-webkit-scrollbar-track{
     }
 
     .about p{
-        font-size: 20px;
+        font-size: 22px;
     }
     
     .about li {
-        font-size: 15px;
+        font-size: 17px;
     }
     
 
 }
 
-/*members*/
+/*student*/
 
 .m-topic{
     font-family: 'Roboto Slab';
@@ -639,42 +639,41 @@ body::-webkit-scrollbar-track{
 }
 
 .member-imgs {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: grid; /* 그리드 레이아웃 사용 */
+    grid-template-columns: repeat(4, 1fr); /* 1행에 4개의 칸 */
+    gap: 10px; /* 칸 간의 간격 설정 */
+    justify-items: center; /* 각 칸 내에서 중앙 정렬 */
 }
 
 .img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 23%;
-    margin: 10px;
     text-align: center;
     box-sizing: border-box;
 }
 
 .img img {
-    height: clamp(160px, 13vw, 300px);
+    height: clamp(160px, 13vw, 210px);
 }
 
-
 .img p {
-    font-size: clamp(15px, 2vw, 20px);
+    font-size: clamp(20px, 1vw, 25px);
     font-family: 'Roboto Slab';
     font-weight: 400;
-    width: 110%;
+    width: 100%; /* 텍스트가 이미지 아래에서 중앙에 위치하도록 설정 */
     color: #000000;
 }
 
 .img p.sub-text {
-    font-size: clamp(10px, 1.5vw, 15px);
+    font-size: clamp(15px, 1.5vw, 15px);
     font-family: 'Roboto Slab';
     font-weight: 300;
     text-align: center;
-    width: 110%;
+    width: 100%;
     color: #484848;
 }
+
 
 @media (max-width: 1200px){
     .m-topic{
@@ -683,6 +682,10 @@ body::-webkit-scrollbar-track{
 
     .member-area {
         width: 80vw;
+    }
+
+    .member-imgs {
+        grid-template-columns: repeat(3, 1fr);
     }
 
 
@@ -697,6 +700,23 @@ body::-webkit-scrollbar-track{
 
     .member-area {
         width: 90vw;
+    }
+
+    .member-imgs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img{
+        flex-basis: 40%;
+    }
+
+    .img p {
+        font-size: 20px;
+
+    }
+    
+    .img p.sub-text {
+        font-size: 15px;
     }
 }
 
