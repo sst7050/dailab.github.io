@@ -27,7 +27,6 @@
 
 ## 2.1. 기본 메뉴 추가하는 과정
 
-메뉴 코드는 전체 html 파일에 추가해야 한다. publication과 people 폴더의 경로를 적을 때는 주의한다.
 
 <details>
   <summary>펼치기</summary>  
@@ -84,6 +83,10 @@
 
 
 ## 2.2. 드롭다운 메뉴 추가하는 과정
+
+<details>
+  <summary>펼치기</summary>  
+
 
 * 주 메뉴와 부 메뉴 추가하는 과정
   
@@ -146,9 +149,12 @@
       <img src="https://github.com/user-attachments/assets/c0ad1c8b-d024-4dab-bccb-09ff78f81103" width= 400px>
       <img src="https://github.com/user-attachments/assets/21f5ddea-b5fb-4de4-81ff-7a5764985632" width= 400px>
 
-
+</details>
 
 ## 2.3. 메뉴 수정 또는 삭제하는 과정
+
+<details>
+  <summary>펼치기</summary>  
 
 * 기존의 주/부메뉴의 제목을 수정하거나 삭제하는 과정
 
@@ -163,7 +169,7 @@
   
     <img src="https://github.com/user-attachments/assets/2093045f-7a2d-41ea-aef7-e32911ce2a00" width= 600px>
 
-
+</details>
 .
 .
 .
