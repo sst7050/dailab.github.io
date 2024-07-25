@@ -169,6 +169,18 @@
   
     <img src="https://github.com/user-attachments/assets/2093045f-7a2d-41ea-aef7-e32911ce2a00" width= 600px>
 
+    ---
+    
+  * 삭제  
+    위 사진에서 Hot Issue를 삭제하려면 아래 코드처럼 수정하면 된다.
+  ``` html
+  <li class="dropdown"><a href="./news.html" data-target="news">News</a></li>
+  ```
+
+  * 결과
+  
+    <img src="https://github.com/user-attachments/assets/18a3794a-d6f1-4989-beda-0f9d4ef0b187" width= 600px>
+
 </details>
 .
 .
