@@ -27,11 +27,11 @@
 
 * 주 메뉴 추가하는 과정 (예: News 옆에 하나 추가하기)
   
-  메뉴 코드는 전체 html 파일에 추가해야 한다. publication과 people 폴더의 경로를 적을 때는 주의한다.
+  메뉴 코드는 전체 html 파일에 각각 추가해야 한다. publication과 people 폴더의 경로를 적을 때는 주의한다.
   * 기본 nav 바에 추가 (예: plus.html)
     * plus.html을 만든다.
 
-    * 만들고자 하는 위치에 다음과 같은 메뉴를 추가한다.
+    * 만들고자 하는 위치에 다음과 같은 메뉴 코드를 추가한다.
        ``` html
        <li class="dropdown"><a href="./plus.html" data-target="plus">Plus</a></li>
        ```
@@ -55,7 +55,7 @@
 
        <img src="https://github.com/user-attachments/assets/03adc951-a148-491f-9648-b45a0cf60c1e" width= 500px>
 
----
+
 
 * 부 메뉴 추가하는 과정 (예: Publication 아래에 새로운 '기간'에 해당되는 항목을 추가하기)
   * media nav 바에 추가
