@@ -24,7 +24,8 @@
 # 2. nav 바 수정 
 
 ## 2.1. 메뉴 추가하는 과정
-* 주 메뉴 추가하는 과정 (예: News 옆에 하나 추가하기)
+
+1. 주 메뉴 추가하는 과정 (예: News 옆에 하나 추가하기)
   
   메뉴 코드는 전체 html 파일에 추가해야 한다. publication과 people 폴더의 경로를 적을 때는 주의한다.
   * 기본 nav 바에 추가 (예: plus.html)
@@ -39,7 +40,7 @@
        <img src="https://github.com/user-attachments/assets/f3be63d5-7343-4e7d-a297-b46d75c54c53" width=1000px;>
        <img src="https://github.com/user-attachments/assets/0f299284-1595-47cc-8621-4ab1077d4d81" width=1000px;>
        
-    * 주의: 메뉴가 늘어났으므로 nav바가 깨질 수 있다. 그럼 css-nav 클래스를 아래 주석과 같이 적절하게 조정하면 된다.
+    * 주의: 메뉴가 늘어났으므로 nav바가 깨질 수 있다. 그럼 css - nav 클래스의 margin-right를 아래 주석과 같이 적절하게 조정하면 된다.
       
        <img src ="https://github.com/user-attachments/assets/f46a38f7-5087-405a-87c3-6df2443d694d" width=500px>
 
@@ -56,11 +57,11 @@
 
 ---
 
-* 부 메뉴 추가하는 과정 (예: Publication 아래에 새로운 '기간'에 해당되는 항목을 추가하기)
+2. 부 메뉴 추가하는 과정 (예: Publication 아래에 새로운 '기간'에 해당되는 항목을 추가하기)
   * media nav 바에 추가
 
 
-* 메뉴 수정 또는 삭제하는 과정
+3. 메뉴 수정 또는 삭제하는 과정
   * 기존의 주/부메뉴의 제목을 수정하거나 삭제하는 과정
 
 .
