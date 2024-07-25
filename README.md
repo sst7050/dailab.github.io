@@ -81,8 +81,9 @@
 
 ## 2.2. 드롭다운 메뉴 추가하는 과정
 
-* 주 메뉴 추가하는 과정
+* 주 메뉴와 부 메뉴 추가하는 과정
   
+  ---
   * 기본 nav 바에 추가
     * one.html, two.html을 만든다. - 드롭다운 메뉴들
       
@@ -91,6 +92,7 @@
        <li class="dropdown">
           <a href="#">Plus <i class="fas fa-caret-down"></i></a>
           <div class="dropdown-content">  <!-- 드롭다운 메뉴들 이름이 길면 content1, 짧으면 content 사용 -->
+               <!-- 아래 부 메뉴들 나열 - 추가하고 싶을 때는 그냥 쭉 나열하기 -->
               <a class="dropdown-item" href="./one.html" data-target="one">one</a>
               <a class="dropdown-item" href="./two.html" data-target="two">two</a>
           </div>
@@ -100,7 +102,8 @@
     * 결과
    
       <img src ="https://github.com/user-attachments/assets/80c6a172-c2bb-4a01-8044-68ac508350eb" width=500px>
-      <img src ="https://github.com/user-attachments/assets/32021d5d-416f-4aee-988f-0597ced613ce" width=500px>
+      <img src ="https://github.com/user-attachments/assets/40def3e6-6e83-44cf-a426-851633811cf3" width=500px>
+
 
     * 주의: 메뉴가 늘어났으므로 화면을 가로로 줄였을 때 nav바가 깨질 수 있다. 그럼 css - nav 클래스의 margin-right를 아래 주석과 같이 적절하게 조정하면 된다.
       
@@ -116,6 +119,28 @@
     * 수정 결과
       
        <img src="https://github.com/user-attachments/assets/03adc951-a148-491f-9648-b45a0cf60c1e" width= 500px>
+
+---
+
+  * media nav 바에 추가 (예: plus.html)
+    * one.html, two.html을 만든다. - 드롭다운 메뉴들
+      
+    * 만들고자 하는 위치에 다음과 같은 메뉴 코드를 추가한다.
+       ```html
+       <li class="dropdown">
+          <a href="#">Plus <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">  <!-- 드롭다운 메뉴들 이름이 길면 content1, 짧으면 content 사용 -->
+               <!-- 아래 부 메뉴들 나열 - 추가하고 싶을 때는 그냥 쭉 나열하기 -->
+              <a class="dropdown-item" href="./one.html" data-target="one">one</a>
+              <a class="dropdown-item" href="./two.html" data-target="two">two</a>
+          </div>
+       </li>
+       ```
+       
+    * 결과
+      
+      <img src="https://github.com/user-attachments/assets/c0ad1c8b-d024-4dab-bccb-09ff78f81103" width= 500px>
+      <img src="https://github.com/user-attachments/assets/21f5ddea-b5fb-4de4-81ff-7a5764985632" width= 500px>
 
 ---
 
