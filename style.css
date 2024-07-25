@@ -41,7 +41,7 @@ body::-webkit-scrollbar-track{
     align-items: center;
     top: 0;
     width: 100%;
-    height: clamp(35px, 10vh, 60px);
+    height: clamp(50px, 10vh, 60px);
     background: #1b2021;
     z-index: 1000;
     padding: 0 2vw;
@@ -341,7 +341,7 @@ body::-webkit-scrollbar-track{
 
 .margin{
     width: 100%;
-    height: clamp(35px, 10vh, 60px);
+    height: clamp(50px, 10vh, 60px);
 }
 
 .hello{
@@ -712,9 +712,6 @@ body::-webkit-scrollbar-track{
     }
 }
 
-
-
-
 /*publication*/
 .basic {
     display: flex;
@@ -728,7 +725,7 @@ body::-webkit-scrollbar-track{
 .note {
     width: 100%;
     height: 35vh;
-    margin-top: clamp(35px, 10vh, 60px);
+    margin-top: clamp(50px, 10vh, 60px);
     overflow: hidden;
     position: relative;
 }
