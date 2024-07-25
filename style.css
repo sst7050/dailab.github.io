@@ -496,12 +496,6 @@ body::-webkit-scrollbar-track{
 /*Member*/
 /*Professor*/
 
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 .professor{
     display: flex;
     margin: auto;
