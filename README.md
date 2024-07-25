@@ -102,7 +102,7 @@
     * 결과
    
       <img src ="https://github.com/user-attachments/assets/80c6a172-c2bb-4a01-8044-68ac508350eb" width=500px>
-      <img src ="https://github.com/user-attachments/assets/40def3e6-6e83-44cf-a426-851633811cf3" width=500px>
+      <img src ="https://github.com/user-attachments/assets/40def3e6-6e83-44cf-a426-851633811cf3" width=600px>
 
 
     * 주의: 메뉴가 늘어났으므로 화면을 가로로 줄였을 때 nav바가 깨질 수 있다. 그럼 css - nav 클래스의 margin-right를 아래 주석과 같이 적절하게 조정하면 된다.
