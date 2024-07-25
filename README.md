@@ -139,13 +139,11 @@
        
     * 결과
       
-      <img src="https://github.com/user-attachments/assets/c0ad1c8b-d024-4dab-bccb-09ff78f81103" width= 500px>
-      <img src="https://github.com/user-attachments/assets/21f5ddea-b5fb-4de4-81ff-7a5764985632" width= 500px>
+      <img src="https://github.com/user-attachments/assets/c0ad1c8b-d024-4dab-bccb-09ff78f81103" width= 400px>
+      <img src="https://github.com/user-attachments/assets/21f5ddea-b5fb-4de4-81ff-7a5764985632" width= 400px>
 
 ---
 
-* 부 메뉴 추가하는 과정 (예: Publication 아래에 새로운 '기간'에 해당되는 항목을 추가하기)
-  * media nav 바에 추가
 
 
 * 메뉴 수정 또는 삭제하는 과정
