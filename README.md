@@ -56,7 +56,7 @@
        <img src="https://github.com/user-attachments/assets/03adc951-a148-491f-9648-b45a0cf60c1e" width= 500px>
     
   
-  
+---
   
   * media nav 바에 추가 (예: plus.html)
      * plus.html을 만든다.
@@ -67,7 +67,7 @@
        ```
      * 결과
      
-     <img src ="https://github.com/user-attachments/assets/97819168-115d-4b17-a1a6-ecd13aeae2b0" width=400px>
+      <img src ="https://github.com/user-attachments/assets/97819168-115d-4b17-a1a6-ecd13aeae2b0" width=400px>
       <img src ="https://github.com/user-attachments/assets/8b972a82-066e-4369-94f0-56371e17ef48" width=400px>
 
 
@@ -75,7 +75,29 @@
 
 
 ---
+
 ## 2.2. 드롭다운 메뉴 추가하는 과정
+
+* 주 메뉴 추가하는 과정
+  
+  * 기본 nav 바에 추가
+    * one.html, two.html을 만든다. - 드롭다운 메뉴들
+      
+    * 만들고자 하는 위치에 다음과 같은 메뉴 코드를 추가한다.
+       ```html
+       <li class="dropdown">
+          <a href="#">Plus <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">  <!-- 드롭다운 메뉴들 이름이 길면 content1, 짧으면 content 사용 -->
+              <a class="dropdown-item" href="./one.html" data-target="one">one</a>
+              <a class="dropdown-item" href="./two.html" data-target="two">two</a>
+          </div>
+       </li>
+       ```
+       
+    * 결과
+   
+      <img src ="https://github.com/user-attachments/assets/80c6a172-c2bb-4a01-8044-68ac508350eb" width=500px>
+      <img src ="https://github.com/user-attachments/assets/32021d5d-416f-4aee-988f-0597ced613ce" width=500px>
 
 
 * 부 메뉴 추가하는 과정 (예: Publication 아래에 새로운 '기간'에 해당되는 항목을 추가하기)
