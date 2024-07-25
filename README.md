@@ -35,6 +35,7 @@
        <li class="dropdown"><a href="./plus.html" data-target="plus">Plus</a></li>
        ```
     3. 결과
+       
        <img src="https://github.com/user-attachments/assets/f3be63d5-7343-4e7d-a297-b46d75c54c53" width=700px;>
        <img src="https://github.com/user-attachments/assets/0f299284-1595-47cc-8621-4ab1077d4d81" width=700px;>
        
