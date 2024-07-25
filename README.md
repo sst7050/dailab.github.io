@@ -26,7 +26,7 @@
 ## 2.1. 기본 메뉴 추가하는 과정
 
 * 주 메뉴 추가하는 과정 (예: News 옆에 하나 추가하기)
-  
+  ---
   메뉴 코드는 전체 html 파일에 각각 추가해야 한다. publication과 people 폴더의 경로를 적을 때는 주의한다.
   * 기본 nav 바에 추가 (예: plus.html)
     * plus.html을 만든다.
@@ -99,6 +99,22 @@
       <img src ="https://github.com/user-attachments/assets/80c6a172-c2bb-4a01-8044-68ac508350eb" width=500px>
       <img src ="https://github.com/user-attachments/assets/32021d5d-416f-4aee-988f-0597ced613ce" width=500px>
 
+    * 주의: 메뉴가 늘어났으므로 화면을 가로로 줄였을 때 nav바가 깨질 수 있다. 그럼 css - nav 클래스의 margin-right를 아래 주석과 같이 적절하게 조정하면 된다.
+      
+       <img src ="https://github.com/user-attachments/assets/f46a38f7-5087-405a-87c3-6df2443d694d" width=500px>
+
+
+       ``` css
+       .nav {
+           margin-right: 15vw; /*  15vw -> 10vw */
+       }
+       ```
+
+    * 수정 결과
+      
+       <img src="https://github.com/user-attachments/assets/03adc951-a148-491f-9648-b45a0cf60c1e" width= 500px>
+
+---
 
 * 부 메뉴 추가하는 과정 (예: Publication 아래에 새로운 '기간'에 해당되는 항목을 추가하기)
   * media nav 바에 추가
