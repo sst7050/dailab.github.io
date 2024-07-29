@@ -12,7 +12,7 @@ body {
 
 body::-webkit-scrollbar{
     width: 15px;
-    background: linear-gradient(to bottom, #1b2021 0%, #1b2021 20%, #fff 20%, #fff 100%);
+    background: linear-gradient(to bottom, #1b2021 0%,  20%, #fff 20%, #fff 100%);
 }
 
 body::-webkit-scrollbar-thumb{
@@ -22,7 +22,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 body::-webkit-scrollbar-track{
-    background: linear-gradient(to bottom, #1b2021 0%, #1b2021 clamp(35px, 10vh, 60px), #dfdfdf clamp(35px, 10vh, 60px), #dfdfdf 100%);
+    background: linear-gradient(to bottom, #1b2021 0%, #1b2021 clamp(50px, 10vh, 60px), #dfdfdf clamp(50px, 10vh, 60px), #dfdfdf 100%);
     border-radius: 10px;
 }
 
@@ -475,6 +475,41 @@ body::-webkit-scrollbar-track{
     margin-bottom: 10px;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: clamp(80px, 15vh, 110px);
+    background-color: #1b2021;
+    padding-top: 30px;
+}
+
+.footer p,
+.footer p > a {
+    width: 60%;
+    margin: auto;
+    font-family: 'Roboto Slab';
+    font-size: clamp(12px, 1.5vw, 15px);
+    font-weight: 300;
+    color: #BFBFBF;
+    text-align: center;
+}
+
+.menu-item::after {
+    content: "\00a0\00a0\00a0|\00a0\00a0\00a0"; /* 공백 3개와 | 기호 */
+}
+
+.menu-item:last-child::after {
+    content: ""; /* 마지막 항목에서는 공백과 | 제거 */
+}
+
+.margin-footer{
+    width: 100%;
+    height: 20px;
+    background-color: #1b2021;
+}
+
 @media (max-width: 650px){
     .info{
         width: 90vw;
@@ -489,6 +524,18 @@ body::-webkit-scrollbar-track{
         font-size: 14px;
     }
 
+    .footer{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .footer p{
+        width: 90%;
+    }
+
+    .margin-footer{
+        height: 10px;
+    }
 }
 
 
@@ -728,15 +775,26 @@ body::-webkit-scrollbar-track{
     margin-top: clamp(50px, 10vh, 60px);
     overflow: hidden;
     position: relative;
+    display: inline-block;
 }
 
 .note img {
     object-fit: cover;
+    display: block;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+}
+.note .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
 }
 
 .p-topic {
