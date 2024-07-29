@@ -787,6 +787,7 @@ body::-webkit-scrollbar-track{
     top: 0;
     left: 0;
 }
+
 .note .overlay {
     position: absolute;
     top: 0;
