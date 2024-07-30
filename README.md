@@ -194,6 +194,7 @@ index.html 파일은 bytecell.github.io에 있는 것이 아니라 'bytecell.git
 
 * plus.html 만들기
 * footer class에 코드 추가
+  
   경로 설정에 주의
   ``` css
   <a href="./plus.html" class="menu-item">Plus</a>
@@ -217,6 +218,7 @@ index.html 파일은 bytecell.github.io에 있는 것이 아니라 'bytecell.git
 
 * /assets/member/miso.jpg 저장하기
 * member-imgs class에 코드 추가
+    
   경로 설정에 주의
   ``` html
   <div class="img">
