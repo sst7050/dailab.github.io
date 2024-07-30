@@ -201,7 +201,8 @@ index.html 파일은 bytecell.github.io에 있는 것이 아니라 'bytecell.git
   
 * 결과
   
-  <img src="https://github.com/user-attachments/assets/18a3794a-d6f1-4989-beda-0f9d4ef0b187" width= 600px>
+  <img src="https://github.com/user-attachments/assets/7d69c13b-d292-41a8-afe3-2b7a02b3fbed" width= 600px>
+
 
 </details>
 
