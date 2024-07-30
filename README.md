@@ -212,6 +212,27 @@ index.html 파일은 bytecell.github.io에 있는 것이 아니라 'bytecell.git
 
 ## 3.1. Student 멤버 추가
 
+<details>
+  <summary>펼치기</summary>  
+
+* /assets/member/miso.jpg 저장하기
+* member-imgs class에 코드 추가
+  경로 설정에 주의
+  ``` html
+  <div class="img">
+                        <img src="../assets/member/miso.jpg" alt="dlcodns">
+                        <p>dlcodns</p>
+                        <p class="sub-text">Undergraduate researcher (2024. 8~)<br><br>Language models<br>Web Programming</p>
+                    </div>
+  ```
+  
+* 결과
+  
+  <img src="https://github.com/user-attachments/assets/7d69c13b-d292-41a8-afe3-2b7a02b3fbed" width= 600px>
+
+
+</details>
+
 
 ## 3.2. Alumni 멤버 추가
 
