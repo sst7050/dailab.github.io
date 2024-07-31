@@ -222,10 +222,10 @@ index.html 파일은 bytecell.github.io에 있는 것이 아니라 'bytecell.git
   경로 설정에 주의
   ``` html
   <div class="img">
-                        <img src="../assets/member/miso.jpg" alt="dlcodns">
-                        <p>dlcodns</p>
-                        <p class="sub-text">Undergraduate researcher (2024. 8~)<br><br>Language models<br>Web Programming</p>
-                    </div>
+      <img src="../assets/member/miso.jpg" alt="dlcodns">
+      <p>dlcodns</p>
+      <p class="sub-text">Undergraduate researcher (2024. 8~)<br><br>Language models<br>Web Programming</p>
+  </div>
   ```
   
 * 결과
