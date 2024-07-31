@@ -222,8 +222,8 @@ index.html 파일은 bytecell.github.io에 있는 것이 아니라 'bytecell.git
   경로 설정에 주의
   ``` html
   <div class="img">
-      <img src="../assets/member/miso.jpg" alt="dlcodns">
-      <p>dlcodns</p>
+      <img src="../assets/member/miso.jpg" alt="miso">
+      <p>Mi-So</p>
       <p class="sub-text">Undergraduate researcher (2024. 8~)<br><br>Language models<br>Web Programming</p>
   </div>
   ```
@@ -255,3 +255,9 @@ index.html 파일은 bytecell.github.io에 있는 것이 아니라 'bytecell.git
     * 대문 웹페이지 사진 변경하기
     * 새로운 member 에 대한 사진을 넣기
     * News 에서 새로운 소식에 대한 사진을 넣기
+
+
+
+
+이해 안되는 부분 있으면 아래 이메일로 연락 부탁드립니다.
+컴퓨터공학과 이채운: redmond0412@gmail.com
