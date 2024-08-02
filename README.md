@@ -432,6 +432,9 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 
 ## 4.2. nav바 색상 변경
 
+<details>
+  <summary>펼치기</summary>  
+
 - style.css의 37번줄 .menu의 background:의 색상을 바꾼다.
 
   <img src="https://github.com/user-attachments/assets/bfaddeb6-444b-4955-b0f5-294881941c77" width= 600px>
@@ -455,6 +458,23 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
   ```
   
   <img src="https://github.com/user-attachments/assets/7ee658ad-4626-474e-90a1-feb7b7287a45" width= 600px>
+
+  </details>
+
+## 4.3. 배경 화면 색상 변경
+
+<details>
+  <summary>펼치기</summary>  
+
+- style.css의 9번줄 body의 background-color:를 원하는 색상으로 바꾼다.
+
+  ```css
+   background-color: #a8b9db;
+  ```
+
+  <img src="https://github.com/user-attachments/assets/c328a1bf-c91c-49fe-ad9f-16c6ec6c125d" width= 600px>
+
+  </details>
 
 
 이해 안되는 부분 있으면 아래 이메일로 연락 부탁드립니다.
