@@ -23,9 +23,10 @@
 
 # 2. nav 바 수정 
 
-메뉴 코드는 전체 html 파일에 각각 추가해야 한다. publication과 people 폴더의 경로를 적을 때는 주의한다.
-로컬에서는 '/index.html'을 불러오면 해당 폴더(home)의 index 파일이 잘 실행되지만, github.io 창에서는 경로가 'https://bytecell.github.io/index.html'로 되기 때문에 실행이 안된다.
-index.html 파일은 bytecell.github.io에 있는 것이 아니라 'bytecell.github.io/dailab.github.io'에 있기 때문이다. 따라서 경로 앞에 '/' 절대 경로가 아닌 './' 현재폴더 경로를 적어주어야 한다. 같은 이유로 '../', '../../'로 써야 한다.
+메뉴 코드는 전체 html 파일에 각각 추가해야 한다. publication과 people 폴더의 경로를 적을 때는 주의한다.  
+로컬에서는 '/index.html'을 불러오면 해당 폴더(home)의 index 파일이 잘 실행되지만, github.io 창에서는 경로가 'https://bytecell.github.io/index.html' 로 되기 때문에 실행이 안된다.
+index.html 파일은 bytecell.github.io에 있는 것이 아니라 'bytecell.github.io/dailab.github.io' 에 있기 때문이다.   
+따라서 경로 앞에 '/' 절대 경로가 아닌 './' 현재폴더 경로를 적어주어야 한다. 같은 이유로 '../', '../../'로 써야 한다.
 
 ## 2.1. 기본 메뉴 추가하는 과정
 
