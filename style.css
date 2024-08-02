@@ -8,11 +8,14 @@
 
 body {
     overflow-x: hidden; /* 가로 스크롤 방지 */
+    background-color: #ffffff;
 }
+
+/*스크롤 디자인*/
 
 body::-webkit-scrollbar{
     width: 15px;
-    background: linear-gradient(to bottom, #1b2021 0%,  20%, #fff 20%, #fff 100%);
+    background: linear-gradient(to bottom, #1b2021 0%, #1b2021 20%, #fff 20%, #fff 100%);
 }
 
 body::-webkit-scrollbar-thumb{
@@ -27,13 +30,16 @@ body::-webkit-scrollbar-track{
 }
 
 
+/*백그라운드 설정*/
+
 .intro_bg{
     display: flex;
     flex-direction: column;
-    background-color: #FFF;
     width:100%;
+    min-height: 100vh;
 }
 
+/*nav바 디자인*/
 .menu {
     position: fixed;
     display: flex;
@@ -55,7 +61,6 @@ body::-webkit-scrollbar-track{
     font-weight: 300;
     margin:auto;
     margin-left:10vw;
-    background: #1b2021;
 }
 
 .logo a{
@@ -66,7 +71,6 @@ body::-webkit-scrollbar-track{
     list-style: none;
     display: flex;
     margin: 0;
-    background: #1b2021;
     margin-right: 15vw;
 }
 
@@ -140,6 +144,57 @@ body::-webkit-scrollbar-track{
     display: none;
 }
 
+.intro_bg > .footer{
+    margin-top: auto;
+}
+
+
+/*footer바 디자인*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: clamp(80px, 15vh, 110px);
+    padding-top: 30px;
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 60%;
+    transform: translateX(-50%);
+    border-top: 1px solid #c5c5c5;
+}
+
+.footer p,
+.footer p > a {
+    width: 60%;
+    margin: auto;
+    font-family: 'Roboto Slab';
+    font-size: clamp(12px, 1.5vw, 15px);
+    font-weight: 300;
+    color: #6b6b6b;
+    text-align: center;
+}
+
+.menu-item::after {
+    content: "\00a0\00a0\00a0|\00a0\00a0\00a0"; /* 공백 3개와 | 기호 */
+}
+
+.menu-item:last-child::after {
+    content: ""; /* 마지막 항목에서는 공백과 | 제거 */
+}
+
+.margin-footer{
+    width: 100%;
+    height: 20px;
+}
+
+
 @media (max-width: 650px) {
 
     body {
@@ -165,7 +220,6 @@ body::-webkit-scrollbar-track{
         justify-content: center;
         align-items: center;
         width: 100vw;
-        background: #1b2021;
     }
     
     .logo > a {
@@ -328,9 +382,28 @@ body::-webkit-scrollbar-track{
         opacity: 1;
         visibility: visible;
     }
+
+    
+    .footer{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .footer p{
+        width: 90%;
+    }
+
+    .footer::before {
+        width: 90%;
+    }
+
+
+    .margin-footer{
+        height: 10px;
+    }
 }
 
-/*여기까지 nav바 css*/
+/*여기까지 nav바, footer바 css*/
 
 /*home(index)*/
 .container {
@@ -475,51 +548,6 @@ body::-webkit-scrollbar-track{
     margin-bottom: 10px;
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: clamp(80px, 15vh, 110px);
-    background-color: #fff;
-    padding-top: 30px;
-    position: relative;
-}
-
-.footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 60%;
-    transform: translateX(-50%);
-    border-top: 1px solid #c5c5c5;
-}
-
-.footer p,
-.footer p > a {
-    width: 60%;
-    margin: auto;
-    font-family: 'Roboto Slab';
-    font-size: clamp(12px, 1.5vw, 15px);
-    font-weight: 300;
-    color: #6b6b6b;
-    text-align: center;
-}
-
-.menu-item::after {
-    content: "\00a0\00a0\00a0|\00a0\00a0\00a0"; /* 공백 3개와 | 기호 */
-}
-
-.menu-item:last-child::after {
-    content: ""; /* 마지막 항목에서는 공백과 | 제거 */
-}
-
-.margin-footer{
-    width: 100%;
-    height: 20px;
-    background-color: #fff;
-}
 
 @media (max-width: 650px){
     .info{
@@ -535,23 +563,6 @@ body::-webkit-scrollbar-track{
         font-size: 14px;
     }
 
-    .footer{
-        padding-top: 20px;
-        padding-bottom: 10px;
-    }
-
-    .footer p{
-        width: 90%;
-    }
-
-    .footer::before {
-        width: 90%;
-    }
-
-
-    .margin-footer{
-        height: 10px;
-    }
 }
 
 
@@ -782,7 +793,6 @@ body::-webkit-scrollbar-track{
     align-items: center;
     width: 100%;
     flex-grow: 1;
-    background: #fff;
 }
 
 .note {
@@ -865,7 +875,6 @@ body::-webkit-scrollbar-track{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #fff;
     width: 70vw;
     padding: 20px;
     box-sizing: border-box;
@@ -1080,8 +1089,13 @@ body::-webkit-scrollbar-track{
 }
 
 .address li i {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
     font-size: 40px;
+    text-align: center;
+    line-height: 40px;
 }
 
 
