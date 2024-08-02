@@ -389,8 +389,13 @@ body::-webkit-scrollbar-track{
         padding-bottom: 10px;
     }
 
+    .footer p > a{
+        font-size: 10px;
+    }
+
     .footer p{
         width: 90%;
+        font-size: 10px;
     }
 
     .footer::before {
@@ -559,8 +564,16 @@ body::-webkit-scrollbar-track{
         width: 90vw;
     }
 
-    .projects ul{
+    .icon p {
+        font-size: 16px;
+    }
+
+    .icon p.sub-text {
         font-size: 14px;
+    }
+
+    .projects ul{
+        font-size: 15px;
     }
 
 }
