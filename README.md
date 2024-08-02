@@ -375,6 +375,52 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 
 ## 4.1. 스크롤 디자인
 
+<details>
+  <summary>펼치기</summary>  
+
+* style.css 파일의 9번 줄 이후 수정
+* member-imgs class에 코드 추가
+    
+  경로 설정에 주의
+  아래 코드를 Student 또는 Alumni 파일에 복붙하면 된다.
+  ``` html
+   body {
+       overflow-x: hidden; /* 가로 스크롤 방지 */
+   }
+  ```
+
+* 스크롤바 background 스타일
+  ``` html
+   body::-webkit-scrollbar{
+       width: 15px;
+       background: linear-gradient(to bottom, #1b2021 0%,  20%, #fff 20%, #fff 100%);
+   }
+  ```
+
+* 스크롤바 thumb 스타일
+  ``` html
+   body::-webkit-scrollbar-thumb{
+       background-color: #89afa3;
+       border-radius: 10px;
+       box-shadow: inset 0px 0px 7px #c7e3da;
+   }
+  ```
+
+  ``` html
+   body::-webkit-scrollbar-track{
+       background: linear-gradient(to bottom, #1b2021 0%, #1b2021 clamp(50px, 10vh, 60px), #dfdfdf clamp(50px, 10vh, 60px), #dfdfdf 100%);
+       border-radius: 10px;
+   }
+  ```
+  
+* 결과
+  
+  <img src="https://github.com/user-attachments/assets/44d538c8-6166-4346-8919-a10d3603c809" width= 600px>
+
+</details>
+
+
+
 
 이해 안되는 부분 있으면 아래 이메일로 연락 부탁드립니다.
 컴퓨터공학과 이채운: redmond0412@gmail.com
