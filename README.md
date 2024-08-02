@@ -371,33 +371,37 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 
 
 
-# 4. 디자인 바꾸는 방법
+# 4. 디자인 코드 설명
 
-## 4.1. 스크롤 디자인
+## 4.1. 스크롤 디자인 설명
 
 <details>
   <summary>펼치기</summary>  
 
 * style.css 파일의 9번 줄 이후 수정
-* member-imgs class에 코드 추가
-    
-  경로 설정에 주의
-  아래 코드를 Student 또는 Alumni 파일에 복붙하면 된다.
-  ``` html
-   body {
-       overflow-x: hidden; /* 가로 스크롤 방지 */
-   }
-  ```
+* 스크롤바 css를 그림으로 나타내면 아래 사진과 같다.
+
+  <img src="https://github.com/user-attachments/assets/69745c96-8096-4e2f-b8e3-555cde7b6900" width= 600px>
+
 
 * 스크롤바 background 스타일
+
+  linear-gradient(to bottom,  ,  ,  ,  )는 위에서 밑으로 색상 그라데이션을 주는 코드이다. 아래 코드는 0~20은 짙은 남색, 20~100은 흰색을 보여준다. 이렇게 한 이유는 nav바 색상(남색)과 그 아래 흰색 background가 스크롤바 색상과 이어지게 하기 위해서이다.
+  
+  만약 background: linear-gradient(to bottom, #6a11cb 0%, #2575fc 50%, #6a11cb 100%); 이렇게 하면 보라색 (#6a11cb)에서 시작하여 파란색 (#2575fc)으로 변화하고, 다시 보라색으로 변화하는 디자인이 된다. 그라데이션.
+  
   ``` html
    body::-webkit-scrollbar{
        width: 15px;
-       background: linear-gradient(to bottom, #1b2021 0%,  20%, #fff 20%, #fff 100%);
+       background: linear-gradient(to bottom, #1b2021 0%, #1b2021 20%, #fff 20%, #fff 100%);
    }
   ```
 
 * 스크롤바 thumb 스타일
+  
+  - border-radius: 꼭짓점의 둥근 정도
+  - box-shadow: thumb를 감싸는 모양의 그라데이션과 그 색상   
+  
   ``` html
    body::-webkit-scrollbar-thumb{
        background-color: #89afa3;
@@ -405,6 +409,11 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
        box-shadow: inset 0px 0px 7px #c7e3da;
    }
   ```
+  
+* 스크롤바 track 스타일
+
+  clamp로 한 이유는 nav바의 height가 clamp(50px, 10vh, 60px)이기 때문이다. 위에서 linear-gradient를 사용한 것과 동일한 이유로 clamp(50px, 10vh, 60px)까지만 짙은 남색을 적용해서 nav바와 스크롤바가 시각적으로 이어지게 만들었다.
+
 
   ``` html
    body::-webkit-scrollbar-track{
@@ -415,11 +424,37 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
   
 * 결과
   
-  <img src="https://github.com/user-attachments/assets/44d538c8-6166-4346-8919-a10d3603c809" width= 600px>
+  <img src="https://github.com/user-attachments/assets/9702d796-cea2-4aac-87c3-c4b4437c22e0" width= 600px>
+
 
 </details>
 
 
+## 4.2. nav바 색상 변경
+
+- style.css의 37번줄 .menu의 background:의 색상을 바꾼다.
+
+  <img src="https://github.com/user-attachments/assets/bfaddeb6-444b-4955-b0f5-294881941c77" width= 600px>
+
+- 13번줄 body::-webkit-scrollbar의 0%, 20% 색상 두 개를 바꾼다.
+
+  ```css
+   background: linear-gradient(to bottom, #1b2021 0%, #1b2021 20%, #fff 20%, #fff 100%);
+   /* 바꾸면 */
+   background: linear-gradient(to bottom, #83b5be 0%, #83b5be 20%, #fff 20%, #fff 100%);
+  ```
+
+  <img src="https://github.com/user-attachments/assets/5eb2c4da-a2ca-4a12-a62a-74b3af901b70" width= 600px>
+
+- 24번줄 body::-webkit-scrollbar-track의 0%, 20% 색상 두 개를 바꾼다.
+  
+  ```css
+   background: linear-gradient(to bottom, #1b2021 0%, #1b2021 clamp(50px, 10vh, 60px), #dfdfdf clamp(50px, 10vh, 60px), #dfdfdf 100%);
+   /* 바꾸면 */
+   background: linear-gradient(to bottom, #83b5be 0%, #83b5be clamp(50px, 10vh, 60px), #dfdfdf clamp(50px, 10vh, 60px), #dfdfdf 100%);
+  ```
+  
+  <img src=https://github.com/user-attachments/assets/7ee658ad-4626-474e-90a1-feb7b7287a45" width= 600px>
 
 
 이해 안되는 부분 있으면 아래 이메일로 연락 부탁드립니다.
