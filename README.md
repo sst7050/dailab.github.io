@@ -294,7 +294,7 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 > ``` html
 > <div class="title"><li><p>[News 분류]</p> 연도와 대회명 + 제목 + 팀명 (장소, 날짜) </li></div>
 > ```  
->
+>  
 
 
     
@@ -338,7 +338,7 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 >     </div>
 >  </div>
 > ```  
-
+>  
 
 
 
