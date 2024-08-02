@@ -386,7 +386,7 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 
 * 스크롤바 background 스타일
 
-  linear-gradient(to bottom,  ,  ,  ,  )는 위에서 밑으로 색상 그라데이션을 주는 코드이다. 아래 코드는 0~20은 짙은 남색, 20~100은 흰색을 보여준다. 이렇게 한 이유는 nav바 색상(남색)과 그 아래 흰색 background가 스크롤바 색상과 이어지게 하기 위해서이다.
+  linear-gradient(to bottom,  ,  ,  ,  )는 위에서 밑으로 색상 그라데이션을 주는 코드이다. 아래 코드는 0 ~ 20은 짙은 남색, 20 ~ 100은 흰색을 보여준다. 이렇게 한 이유는 nav바 색상(남색)과 그 아래 흰색 background가 스크롤바 색상과 이어지게 하기 위해서이다.
   
   만약 background: linear-gradient(to bottom, #6a11cb 0%, #2575fc 50%, #6a11cb 100%); 이렇게 하면 보라색 (#6a11cb)에서 시작하여 파란색 (#2575fc)으로 변화하고, 다시 보라색으로 변화하는 디자인이 된다. 그라데이션.
   
@@ -454,7 +454,7 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
    background: linear-gradient(to bottom, #83b5be 0%, #83b5be clamp(50px, 10vh, 60px), #dfdfdf clamp(50px, 10vh, 60px), #dfdfdf 100%);
   ```
   
-  <img src=https://github.com/user-attachments/assets/7ee658ad-4626-474e-90a1-feb7b7287a45" width= 600px>
+  <img src="https://github.com/user-attachments/assets/7ee658ad-4626-474e-90a1-feb7b7287a45" width= 600px>
 
 
 이해 안되는 부분 있으면 아래 이메일로 연락 부탁드립니다.
