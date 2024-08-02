@@ -277,9 +277,10 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 
 ## 3.3. News 소식 추가
 
-
 <details>
   <summary>펼치기</summary>  
+
+3.3.1은 title클래스로 시작하고, 3.3.2는 post 클래스로 시작한다.
 
 ### 3.3.1. 사진이 없을 때
 
@@ -292,8 +293,11 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 > EX)
 > ``` html
 > <div class="title"><li><p>[News 분류]</p> 연도와 대회명 + 제목 + 팀명 (장소, 날짜) </li></div>
-> ```
+> ```  
 
+
+
+    
 
 * 추가하고자 하는 연도의 news 클래스에 아래 코드 추가
 
@@ -310,31 +314,58 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 
 ### 3.3.2. 사진이 있을 때
 
+사진이 있을 때는 문장을 클릭하면 사진이 슬라이드 된다.
+
 > ##### 문장 구조
 >
-> * 저자 정보
-> * 제목
-> * 게재된 저널 정보
-> * 게재 날짜. : 만약 게재되지 않았다면 일월 제외하고 [저널 정보, _2024 (accepted)_]
-> * 연구 지원 정보(ACK)
-> * 해당 SCI 논문으로 졸업할(졸업한) 대학원생 이름
+> * News 분류
+> * 연도와 대회명 + 제목 + 팀명
+> * (장소, 날짜)
+> * 이미지 표시 아이콘
 >
 > EX)
 > ``` html
-> <li><p>[학술 논문 등급 or 학회 유형]</p> 저자 정보, "제목" 게재된 저널 정보, 게재 날짜. [연구 지원 정보(ACK)]</li>
-> ```
+> <div class="post">
+>     <div class="title">
+>         <li>
+>             <p>[News 분류]</p> 연도와 대회명 + 제목 + 팀명 (장소, 날짜) 
+>             <span class="fa-solid fa-images"></span>
+>         </li>
+>     </div>
+>     <div class="content">
+>         <img src="사진 경로" alt="사진 명칭">
+>         <img src="사진 경로" alt="사진 명칭">
+>     </div>
+>  </div>
+> ```  
 
 
-* 추가하고자 하는 파트의 media-body 클래스에 코드 추가
-* 아래 코드를 present 또는 past 파일에 복붙하면 된다.
+
+
+        
+
+* 추가할 사진을 ./asset/news에 저장
+* 추가하고자 하는 연도의 news 클래스에 아래 코드 추가
+
 
   ``` html
-  <li><p>[국제탐정대회]</p> Do-Il, Mi-Ran Nam and Young-Seob Jeong, "Dangerous Love: Exploring the Romance at Crime Scenes of Do-Il Nam and Mi-Ran" Biomolecules, Vol. 11(12), Issue 1750, pp.1-15, November 24, 2024. [ACK: None]</li>
+  <div class="post">
+     <div class="title">
+         <li>
+             <p>[대상]</p> 2023 DAI 소프트웨어 경진대회, 팀명: dailab egg (충북대학교 E8-1, October 26, 2024)
+             <span class="fa-solid fa-images"></span>
+         </li>
+     </div>
+     <div class="content">
+         <img src="./assets/news/사진1.jpg" alt="EMNLP_2023_1">
+         <img src="./assets/news/사진2.jpg" alt="EMNLP_2023_2">
+     </div>
+  </div>
   ```
   
 * 결과
   
-  <img src="https://github.com/user-attachments/assets/411fa5cb-2ee5-4641-9b7a-217831befb43" width= 600px>
+  <img src="https://github.com/user-attachments/assets/2a8c9760-62a3-4d96-afac-39461a01a331" width= 600px>
 
 </details>
 
