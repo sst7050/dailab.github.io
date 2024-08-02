@@ -247,6 +247,7 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 
 > ##### 문장 구조
 >
+> * 학술 논문 등급 or 학회 유형
 > * 저자 정보
 > * 제목
 > * 게재된 저널 정보
@@ -277,17 +278,71 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 ## 3.3. News 소식 추가
 
 
+<details>
+  <summary>펼치기</summary>  
+
+### 3.3.1. 사진이 없을 때
+
+> ##### 문장 구조
+>
+> * News 분류
+> * 연도와 대회명 + 제목 + 팀명
+> * (장소, 날짜)
+>
+> EX)
+> ``` html
+> <div class="title"><li><p>[News 분류]</p> 연도와 대회명 + 제목 + 팀명 (장소, 날짜) </li></div>
+> ```
+
+
+* 추가하고자 하는 연도의 news 클래스에 아래 코드 추가
+
+  ``` html
+  <div class="title"><li><p>[대상]</p> 2023 DAI 소프트웨어 경진대회, 팀명: dailab egg (충북대학교 E8-1, October 26, 2024)</li></div>
+  ```
+  
+* 결과
+  
+  <img src="https://github.com/user-attachments/assets/bbb4b89b-fbf0-46e1-898a-469f71d82189" width= 600px>
 
 
 
-* 문서 내용 수정하는 과정
-  * 글 내용 수정 (예: Publication - 2021.09.01 ~ present 에서 논문 실적 1개 추가하기)
-  * 사진 추가 혹은 변경
-    * 대문 웹페이지 사진 변경하기
-    * 새로운 member 에 대한 사진을 넣기
-    * News 에서 새로운 소식에 대한 사진을 넣기
+
+### 3.3.2. 사진이 있을 때
+
+> ##### 문장 구조
+>
+> * 저자 정보
+> * 제목
+> * 게재된 저널 정보
+> * 게재 날짜. : 만약 게재되지 않았다면 일월 제외하고 [저널 정보, _2024 (accepted)_]
+> * 연구 지원 정보(ACK)
+> * 해당 SCI 논문으로 졸업할(졸업한) 대학원생 이름
+>
+> EX)
+> ``` html
+> <li><p>[학술 논문 등급 or 학회 유형]</p> 저자 정보, "제목" 게재된 저널 정보, 게재 날짜. [연구 지원 정보(ACK)]</li>
+> ```
 
 
+* 추가하고자 하는 파트의 media-body 클래스에 코드 추가
+* 아래 코드를 present 또는 past 파일에 복붙하면 된다.
+
+  ``` html
+  <li><p>[국제탐정대회]</p> Do-Il, Mi-Ran Nam and Young-Seob Jeong, "Dangerous Love: Exploring the Romance at Crime Scenes of Do-Il Nam and Mi-Ran" Biomolecules, Vol. 11(12), Issue 1750, pp.1-15, November 24, 2024. [ACK: None]</li>
+  ```
+  
+* 결과
+  
+  <img src="https://github.com/user-attachments/assets/411fa5cb-2ee5-4641-9b7a-217831befb43" width= 600px>
+
+</details>
+
+
+
+# 4. 디자인 바꾸는 방법
+
+## 4.1. 스크롤 디자인
 
 
 이해 안되는 부분 있으면 아래 이메일로 연락 부탁드립니다.
