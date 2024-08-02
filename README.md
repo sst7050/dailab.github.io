@@ -247,28 +247,26 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
 
 > ##### 문장 구조
 >
-> * 제목 및 저자 정보
+> * 저자 정보
+> * 제목
 > * 게재된 저널 정보
-> * 게재 날짜 : 만약 게재되지 않았다면 날짜 제외하고 [저널 정보], 2024 (accepted)
+> * 게재 날짜. : 만약 게재되지 않았다면 일월 제외하고 [저널 정보, _2024 (accepted)_]
 > * 연구 지원 정보(ACK)
 > * 해당 SCI 논문으로 졸업할(졸업한) 대학원생 이름
+>
+> EX) <li><p>[학술 논문 등급 or 학회 유형]</p> 저자 정보, "제목" 게재된 저널 정보, 게재 날짜. [연구 지원 정보(ACK)]</li>
 
-* /assets/member/miso.jpg 저장하기
-* member-imgs class에 코드 추가
-    
-  경로 설정에 주의
-  아래 코드를 Student 또는 Alumni 파일에 복붙하면 된다.
+
+* 추가하고자 하는 파트의 media-body 클래스에 코드 추가
+* 아래 코드를 present 또는 past 파일에 복붙하면 된다.
+
   ``` html
-  <div class="img">
-      <img src="../assets/member/miso.jpg" alt="miso">
-      <p>Mi-So</p>
-      <p class="sub-text">Undergraduate researcher (2024. 8~)<br><br>Language models<br>Web Programming</p>
-  </div>
+  <li><p>[국제탐정대회]</p> Do-Il, Mi-Ran Nam and Young-Seob Jeong, "Dangerous Love: Exploring the Romance at Crime Scenes of Do-Il Nam and Mi-Ran" Biomolecules, Vol. 11(12), Issue 1750, pp.1-15, November 24, 2024. [ACK: None]</li>
   ```
   
 * 결과
   
-  <img src="https://github.com/user-attachments/assets/44d538c8-6166-4346-8919-a10d3603c809" width= 600px>
+  <img src="https://github.com/user-attachments/assets/ca1d23d6-dca8-4c77-899b-e0f5099120f" width= 600px>
 
 </details>
 
