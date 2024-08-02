@@ -503,7 +503,7 @@ body::-webkit-scrollbar-track{
     font-family: 'Roboto Slab';
     font-size: clamp(12px, 1.5vw, 15px);
     font-weight: 300;
-    color: #c5c5c5;
+    color: #6b6b6b;
     text-align: center;
 }
 
@@ -804,13 +804,13 @@ body::-webkit-scrollbar-track{
     left: 0;
 }
 
-.note .overlay {
+.note .overlay2 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     pointer-events: none;
 }
 
