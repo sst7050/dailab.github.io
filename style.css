@@ -481,8 +481,19 @@ body::-webkit-scrollbar-track{
     align-items: center;
     width: 100vw;
     height: clamp(80px, 15vh, 110px);
-    background-color: #1b2021;
+    background-color: #fff;
     padding-top: 30px;
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 60%;
+    transform: translateX(-50%);
+    border-top: 1px solid #c5c5c5;
 }
 
 .footer p,
@@ -492,7 +503,7 @@ body::-webkit-scrollbar-track{
     font-family: 'Roboto Slab';
     font-size: clamp(12px, 1.5vw, 15px);
     font-weight: 300;
-    color: #BFBFBF;
+    color: #c5c5c5;
     text-align: center;
 }
 
@@ -507,7 +518,7 @@ body::-webkit-scrollbar-track{
 .margin-footer{
     width: 100%;
     height: 20px;
-    background-color: #1b2021;
+    background-color: #fff;
 }
 
 @media (max-width: 650px){
@@ -532,6 +543,11 @@ body::-webkit-scrollbar-track{
     .footer p{
         width: 90%;
     }
+
+    .footer::before {
+        width: 90%;
+    }
+
 
     .margin-footer{
         height: 10px;
