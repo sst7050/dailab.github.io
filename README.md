@@ -269,7 +269,7 @@ present와 past는 html 구조가 같고, 논문 입력 방식은 아래와 같�
   
 * 결과
   
-  <img src="https://github.com/user-attachments/assets/ca1d23d6-dca8-4c77-899b-e0f5099120f" width= 600px>
+  <img src="https://github.com/user-attachments/assets/411fa5cb-2ee5-4641-9b7a-217831befb43" width= 600px>
 
 </details>
 
