@@ -14,18 +14,18 @@ body {
 /*스크롤 디자인*/
 
 body::-webkit-scrollbar{
-    width: 15px;
-    background: linear-gradient(to bottom, #1b2021 0%, #1b2021 20%, #fff 20%, #fff 100%);
+    width: 12px;
+    background: linear-gradient(to bottom, #fff 0%, #fff 20%, #fff 20%, #fff 100%);
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color: #89afa3;
+    background-color: #a2b1d3;
     border-radius: 10px;
-    box-shadow: inset 0px 0px 7px #c7e3da;
+    box-shadow: inset 0px 0px 7px #f0f4ff;
 }
 
 body::-webkit-scrollbar-track{
-    background: linear-gradient(to bottom, #1b2021 0%, #1b2021 clamp(50px, 10vh, 60px), #dfdfdf clamp(50px, 10vh, 60px), #dfdfdf 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff clamp(50px, 10vh, 60px), #dfdfdf clamp(50px, 10vh, 60px), #dfdfdf 100%);
     border-radius: 10px;
 }
 
@@ -48,23 +48,24 @@ body::-webkit-scrollbar-track{
     top: 0;
     width: 100%;
     height: clamp(50px, 10vh, 60px);
-    background: #1b2021;
+    background: #ffffff;
     z-index: 1000;
     padding: 0 2vw;
     box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
 .logo{
     font-family: 'Roboto Slab';
     font-size: clamp(25px, 3vw, 35px);
-    font-weight: 300;
+    font-weight: 400;
     margin:auto;
     margin-left:10vw;
 }
 
 .logo a{
-    color: #efefef;
+    color: #000000;
 }
 
 .nav {
@@ -79,7 +80,7 @@ body::-webkit-scrollbar-track{
 }
 
 .nav .dropdown a{
-    color: #efefef;
+    color: #000000;
     font-size: clamp(14px, 0.8vw, 23px);
     font-family: 'Roboto Slab';
     font-weight: 400;
@@ -89,7 +90,7 @@ body::-webkit-scrollbar-track{
 }
 
 .nav .dropdown i {
-    color: #efefef;
+    color: #000000;
     font-size: clamp(10px, 0.8vw, 20px);
 }
 
@@ -99,10 +100,11 @@ body::-webkit-scrollbar-track{
     top: 100%;
     left:50%;
     transform: translateX(-50%);
-    background-color: #1b2021;
+    background-color: #ffffff;
     min-width: clamp(50px, 10vw, 100px);
-    padding-top: 1vh;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-width:thin;
+    border-color: #dadada;
+    border-style: solid;
     z-index: 1000;
 }
 
@@ -112,17 +114,18 @@ body::-webkit-scrollbar-track{
     top: 100%;
     left:80%;
     transform: translateX(-50%);
-    background-color: #1b2021;
+    background-color: #ffffff;
     min-width: 230px;
-    padding-top: 1vh;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-width:thin;
+    border-color: #dadada;
+    border-style: solid;
     z-index: 1000;
 }
 
 .nav .dropdown-content1 .dropdown-item,
 .nav .dropdown-content .dropdown-item {
     padding: 10px 15px;
-    color: #efefef;
+    color: #000000;
     margin: 0;
     text-decoration: none;
     display: block;
@@ -130,7 +133,7 @@ body::-webkit-scrollbar-track{
 
 .nav .dropdown-content1 .dropdown-item:hover,
 .nav .dropdown-content .dropdown-item:hover {
-    background-color: #5a5e5f;
+    background-color: #eeeeee;
 }
 
 .nav .dropdown:hover .dropdown-content1,
@@ -211,7 +214,6 @@ body::-webkit-scrollbar-track{
     
     .menu{
         height: 60px;
-        background: #1b2021;
         z-index: 3;
     }
 
@@ -226,8 +228,8 @@ body::-webkit-scrollbar-track{
         text-align: center;
         font-size: clamp(20px, 3vw, 48px);
         font-family: 'Roboto Slab';
-        font-weight: 300;
-        color: #efefef;
+        font-weight: 400;
+        color: #000000;
     }
     
     
@@ -261,7 +263,7 @@ body::-webkit-scrollbar-track{
         left: 0;
         width: 100%;
         height: 4px;
-        background-color: #efefef;
+        background-color: #000000;
         border-radius: 4px;
     }
     
@@ -301,10 +303,10 @@ body::-webkit-scrollbar-track{
         position: absolute;
         width: 100vw;
         top: 60px;
-        background: #343a3b;
+        background: #eeeeee;
         padding-left: 50px;
         list-style: none;
-        border-top: 1px solid #393e3e;
+        border-top: 1px solid #eeeeee;
         z-index: 2;
         height: auto;
         overflow: hidden;
@@ -321,7 +323,7 @@ body::-webkit-scrollbar-track{
 
     .side_menu .dropdown-content {
         display: none;
-        background-color: #343a3b;
+        background-color: #eeeeee;
         width: 100%;
         min-width: clamp(50px, 10vw, 100px);
         margin-top: 5px;
@@ -332,7 +334,7 @@ body::-webkit-scrollbar-track{
     }
 
     .side_menu .dropdown i {
-        color: #efefef;
+        color: #000000;
         font-size: clamp(12px, 1vw, 25px);
     }
     
@@ -343,7 +345,7 @@ body::-webkit-scrollbar-track{
     .side_menu .dropdown-content .dropdown-item {
         display: block;
         padding: 5px 0;
-        color: #b9b9b9;
+        color: #000000;
         text-decoration: none;
         font-size: clamp(15px, 1.5vw, 20px);
     }
@@ -355,7 +357,7 @@ body::-webkit-scrollbar-track{
     
     .side_menu li a {
         text-decoration: none;
-        color: #b9b9b9;
+        color: #000000;
     }
     
     
@@ -422,6 +424,15 @@ body::-webkit-scrollbar-track{
     height: clamp(50px, 10vh, 60px);
 }
 
+.empty{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    background-color: #F8F8F8;
+    padding-bottom: 10vh;
+    margin-bottom: 5vh;
+}
+
 .hello{
     display: flex;
     flex-direction: column;
@@ -438,6 +449,7 @@ body::-webkit-scrollbar-track{
     text-align: center;
     width: 60vw;
     margin-top: 50px;
+    margin-bottom: 15vh;
     font-size: clamp(18px, 2vw, 25px);
     font-family: 'Roboto Slab';
     font-weight: 400;
@@ -458,7 +470,7 @@ body::-webkit-scrollbar-track{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 10vh;
     font-size: clamp(24px, 3vw, 30px);
 }
 
@@ -504,7 +516,7 @@ body::-webkit-scrollbar-track{
 
 .icon i {
     margin-bottom: 10px;
-    color: #66857b;
+    color: #0747A6;
     font-size: clamp(10px, 8vw, 70px);
 }
 
@@ -527,7 +539,7 @@ body::-webkit-scrollbar-track{
 }
 
 .projects {
-    border-left: 10px solid #66857b;
+    border-left: 10px solid #0747A6;
     padding-left: 15px;
     margin: 20px 0;
     margin-bottom: 50px;
@@ -675,7 +687,8 @@ body::-webkit-scrollbar-track{
         align-items: flex-start;
         padding-left: 0;
         margin-left: 0;
-        padding-top: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .about p{
@@ -706,7 +719,7 @@ body::-webkit-scrollbar-track{
     content: '';
     width: 100%;
     height: 2px;
-    background-color: #66857b;
+    background-color: #0747A6;
     margin: 10px auto 20px;
 }
 
@@ -852,7 +865,7 @@ body::-webkit-scrollbar-track{
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #66857b;
+    background-color: #0747A6;
     margin: 10px 0 0 0;
 }
 
@@ -977,7 +990,7 @@ body::-webkit-scrollbar-track{
     display: inline;
     font-weight: 600;
     font-size: clamp(15px, 0.8vw, 20px);
-    color: #66857b;
+    color: #0747A6;
     margin: 0;
 }
 
@@ -986,7 +999,7 @@ body::-webkit-scrollbar-track{
     flex-direction: row;
     height: 420px;
     padding: 10px;
-    background-color: #e8e7e7;
+    background-color: #f7f7f7;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -994,16 +1007,18 @@ body::-webkit-scrollbar-track{
 
 .content::-webkit-scrollbar{
     height: 10px;
-    background-color: #e8e7e7;
+    background-color: #f7f7f7;
 }
 
 .content::-webkit-scrollbar-thumb{
-    background-color: #89afa3;
+    background-color: #0747A6;
     border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 7px #f0f4ff;
 }
 
 .content::-webkit-scrollbar-track{
-    background-color: #e8e7e7;
+    background-color: #f7f7f7;
     border-radius: 10px;
 }
 
@@ -1074,7 +1089,7 @@ body::-webkit-scrollbar-track{
     content: '';
     width: 100%;
     height: 2px;
-    background-color: #66857b;
+    background-color: #0747A6;
     margin: 10px auto 0;
 }
 
